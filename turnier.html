@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Webseite</title>
+</head>
+<body>
+    <h1>Interaktive Webseite</h1>
+    <label for="inputValue">Gib einen Wert ein:</label>
+    <input type="text" id="inputValue">
+    <button onclick="calculate()">Berechnen</button>
+    <p id="result"></p>
+
+    <script>
+        function calculate() {
+            var inputValue = document.getElementById("inputValue").value;
+            // Hier kannst du die Eingabe verarbeiten und das Ergebnis generieren
+            var result = "Das Ergebnis ist: " + inputValue * 2; // Beispielhaftes Ergebnis: Eingabewert mal 2
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+</body>
+</html>
